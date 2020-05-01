@@ -1,0 +1,30 @@
+{
+    "name": "portfolio-photo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "npm run cleanup && parcel ./src/index.html",
+        "build": "parcel build ./src/index.js",
+        "cleanup": "rm -rf .cache dist"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "cssnano": "^4.1.10",
+        "parcel-plugin-imagemin": "^4.0.1",
+        "postcss-modules": "^1.5.0",
+        "sass": "^1.26.3"
+    },
+    "dependencies": {
+        "@barba/core": "^2.9.7",
+        "autoprefixer": "^9.7.6",
+        "css-mqpacker": "^7.0.0",
+        "gsap": "^3.2.6",
+        "imagesloaded": "^4.1.4",
+        "masonry-layout": "^4.2.2",
+        "postcss-cli": "^7.1.0",
+        "swiper": "^5.3.7"
+    }
+}

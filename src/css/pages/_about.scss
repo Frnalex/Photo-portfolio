@@ -1,0 +1,142 @@
+.about__close {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+
+    .square {
+        display: block;
+        top: 0;
+        left: 50%;
+        width: 1px;
+        height: 41px;
+        background-color: var(--white);
+        position: absolute;
+    }
+
+    .square1 {
+        transform: rotate(-45deg);
+    }
+    .square3 {
+        transform: rotate(45deg);
+    }
+}
+
+@include up(992) {
+    .about__close {
+        width: 50px;
+        height: 50px;
+        right: 70px;
+        top: 70px;
+
+        .square1 {
+            height: 50px;
+        }
+        .square3 {
+            height: 50px;
+        }
+    }
+}
+
+.about__container {
+    z-index: 60;
+    padding: 35px 30px;
+    font-family: $font-alt;
+    font-weight: 350;
+    font-size: 0.875rem;
+    position: absolute;
+    top: calc(var(--vh, 1vh) * 130);
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--black);
+}
+
+.about__copyright {
+    font-size: 0.75rem;
+    margin-bottom: 60px;
+}
+
+.about__description {
+    line-height: 1.4;
+    max-width: 500px;
+
+    p + p {
+        margin-top: 20px;
+    }
+}
+
+.about__email {
+    position: absolute;
+    bottom: 75px;
+}
+
+.about__link {
+    position: absolute;
+    bottom: 30px;
+    font-size: 0.75rem;
+}
+
+@include orientation(landscape) {
+    .about__container {
+        padding: 45px 50px;
+    }
+}
+
+@include up(992) {
+    .about__container {
+        padding: 70px 100px;
+        font-size: 1rem;
+    }
+
+    .about__content {
+        max-width: 25vw;
+    }
+
+    .about__copyright {
+        font-size: 0.875rem;
+        margin-bottom: 80px;
+    }
+
+    .about__link {
+        font-size: 0.875rem;
+    }
+}
+
+// Image
+// ==================
+.about__img {
+    display: none;
+}
+
+@include up(992) {
+    .about__img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: 100px;
+        height: 100%;
+        width: 25%;
+        //clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            object-position: 65% bottom;
+        }
+
+        .about__imgOverlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--black);
+        }
+    }
+}

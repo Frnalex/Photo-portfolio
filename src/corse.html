@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corse - Alexandre Fournou photographie</title>
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./css/style.scss">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__icon">
+            <span class="square square1"></span>
+            <span class="square square2"></span>
+            <span class="square square3"></span>
+            <span class="square square4"></span>
+        </div>
+        <span class="instagram">
+            <a title="Voir mon compte Instagram" href="https://www.instagram.com/frnalex/" target="_blank">
+                <img src="./img/svg/Instagram.svg" alt="logo instagram">
+            </a>
+        </span>
+        <div class="nav__container">
+            <ul class="nav__list">
+                <div class="nav__column">
+                    <li class="nav__item"><a href="pyrenees.html" data-name="pyrenees">Pyrénées</a></li>
+                    <li class="nav__item"><a href="new-zealand.html" data-name="newzealand">New-Zealand</a></li>
+                    <li class="nav__item"><a href="corse.html" data-name="corse">Corse</a></li>
+                    <li class="nav__item"><a href="asie.html" data-name="asie">Asie</a>
+                    </li>
+                </div>
+                <div class="nav__column">
+                    <li class="nav__item"><a href="australie.html" data-name="australie">Australie</a></li>
+                    <li class="nav__item"><a href="astrophotographie.html" data-name="astro">Astrophotographie</a>
+                    </li>
+                </div>
+                <div class="nav__column nav__imgBloc">
+                    <div class="nav__column nav__imgBloc--overlay"></div>
+                </div>
+            </ul>
+            <div class="bg__lines">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+                <span class="line4"></span>
+            </div>
+        </div>
+    </nav>
+
+    <a class="home__link" href="#" title="Retour à l'accueil" onclick="history.back()">
+        <img src="./img/svg/arrow-left.svg" alt="">
+    </a>
+
+    <article class="grid container">
+        <div class="grid__sizer"></div>
+
+        <!-- Photo 1-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/corse/monte-senino_w_360.jpg 360w,
+                ./img/corse/monte-senino_w_650.jpg 650w,
+                ./img/corse/monte-senino_w_864.jpg 864w,
+                ./img/corse/monte-senino_w_1059.jpg 1059w,
+                ./img/corse/monte-senino_w_1536.jpg 1536w" src="./img/corse/monte-senino_w_1536.jpg"
+                    alt="La baie de Porto vue depuis le monte Senino">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Monte Senino</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Sigma 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                18mm ƒ/8.0 1/50s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 2-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/corse/phare-ile-rousse_w_360.jpg 360w,
+                ./img/corse/phare-ile-rousse_w_845.jpg 845w,
+                ./img/corse/phare-ile-rousse_w_1175.jpg 1175w,
+                ./img/corse/phare-ile-rousse_w_1453.jpg 1453w,
+                ./img/corse/phare-ile-rousse_w_1920.jpg 1920w" src="./img/corse/phare-ile-rousse_w_1920.jpg"
+                    alt="Premières lumières du jour sur le phare d'Ile Rousse" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Phare d'Ile Rousse</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                13mm ƒ/8.0 30s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 3-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/corse/vallee-restonica_w_360.jpg 360w,
+                ./img/corse/vallee-restonica_w_758.jpg 758w,
+                ./img/corse/vallee-restonica_w_1039.jpg 1039w,
+                ./img/corse/vallee-restonica_w_1280.jpg 1280w" src="./img/corse/vallee-restonica_w_1280.jpg"
+                    alt="Pause longue sur le ruisseau qui descend de la Restonica" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Vallée de la Restonica</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/8.0 1/6s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 4-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/corse/village-lama_w_360.jpg 360w,
+                ./img/corse/village-lama_w_925.jpg 925w,
+                ./img/corse/village-lama_w_1310.jpg 1310w,
+                ./img/corse/village-lama_w_1600.jpg 1600w" src="./img/corse/village-lama_w_1600.jpg"
+                    alt="Le village de Lama en Balagne" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Village de lama</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Sigma 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                26mm ƒ/8.0 1/100s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 5-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/corse/ile-rousse-grotte_w_360.jpg 360w,
+                ./img/corse/ile-rousse-grotte_w_928.jpg 928w,
+                ./img/corse/ile-rousse-grotte_w_1313.jpg 1313w,
+                ./img/corse/ile-rousse-grotte_w_1600.jpg 1600w" src="./img/corse/ile-rousse-grotte_w_1600.jpg"
+                    alt="Petite grotte avec vue sur la mer" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Petite grotte avec vue</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/16.0 2s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 6-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/corse/corte-brume_w_360.jpg 360w,
+                ./img/corse/corte-brume_w_917.jpg 917w,
+                ./img/corse/corte-brume_w_1304.jpg 1304w,
+                ./img/corse/corte-brume_w_1600.jpg 1600w" src="./img/corse/corte-brume_w_1600.jpg"
+                    alt="Le village de Corte sous la brume" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Corte sous la brume</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Sigma 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                26mm ƒ/8.0 1/400s ISO-200
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 7-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/corse/sant-antonino_w_360.jpg 360w,
+                ./img/corse/sant-antonino_w_772.jpg 772w,
+                ./img/corse/sant-antonino_w_1092.jpg 1092w,
+                ./img/corse/sant-antonino_w_1280.jpg 1280w" src="./img/corse/sant-antonino_w_1280.jpg"
+                    alt="Le village de Sant'Antonino en Corse" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Sant'Antonino</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Sigma 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                50mm ƒ/8.0 25s ISO-160
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 8-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/corse/ile-rousse_w_360.jpg 360w,
+                ./img/corse/ile-rousse_w_928.jpg 928w,
+                ./img/corse/ile-rousse_w_1311.jpg 1311w,
+                ./img/corse/ile-rousse_w_1600.jpg 1600w" src="./img/corse/ile-rousse_w_1600.jpg"
+                    alt="Le phare d'Ile Rousse" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Ile Rousse</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/8.0 1/100s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 9-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/corse/col-bavella_w_360.jpg 360w,
+                ./img/corse/col-bavella_w_735.jpg 735w,
+                ./img/corse/col-bavella_w_974.jpg 974w,
+                ./img/corse/col-bavella_w_1280.jpg 1280w" src="./img/corse/col-bavella_w_1280.jpg"
+                    alt="Vue sur le col de Bavella" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Col de Bavella</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/8.0 1/320s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 10-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/corse/vallee-restonica-2_w_360.jpg 360w,
+                ./img/corse/vallee-restonica-2_w_912.jpg 912w,
+                ./img/corse/vallee-restonica-2_w_1341.jpg 1341w,
+                ./img/corse/vallee-restonica-2_w_1600.jpg 1600w" src="./img/corse/vallee-restonica-2_w_1600.jpg"
+                    alt="Les dizaines de cascades de la Restonica" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Restonica</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/8.0 1/4s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 12-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/corse/couvent-corbara_w_360.jpg 360w,
+                ./img/corse/couvent-corbara_w_926.jpg 926w,
+                ./img/corse/couvent-corbara_w_1311.jpg 1311w,
+                ./img/corse/couvent-corbara_w_1600.jpg 1600w" src="./img/corse/couvent-corbara_w_1600.jpg"
+                    alt="Le couvent de Corbara en Balagne" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Couvent de Corbara</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Sigma 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                17mm ƒ/8.0 1/5s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 13-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/corse/fort-vivario_w_360.jpg 360w,
+                ./img/corse/fort-vivario_w_933.jpg 933w,
+                ./img/corse/fort-vivario_w_1343.jpg 1343w,
+                ./img/corse/fort-vivario_w_1600.jpg 1600w" src="./img/corse/fort-vivario_w_1600.jpg"
+                    alt="Les ruines du fort de Vivario " loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Le fort de Vivario</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Sigma 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                21mm ƒ/8.0 1/15s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 14-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/corse/girolata_w_360.jpg 360w,
+                ./img/corse/girolata_w_913.jpg 913w,
+                ./img/corse/girolata_w_1315.jpg 1315w,
+                ./img/corse/girolata_w_1600.jpg 1600w" src="./img/corse/girolata_w_1600.jpg"
+                    alt="Le golfe de Girolata vu depuis le mont Senino" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Girolata</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/8.0 1/100s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 11-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                        ./img/corse/panorama-balagne_w_360.jpg 360w,
+                        ./img/corse/panorama-balagne_w_996.jpg 996w,
+                        ./img/corse/panorama-balagne_w_1394.jpg 1394w,
+                        ./img/corse/panorama-balagne_w_1600.jpg 1600w" src="./img/corse/panorama-balagne_w_1600.jpg"
+                    alt="Panorama depuis Licciola" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Licciola</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Sigma 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                50mm ƒ/8.0 1/400s ISO-200
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.bg__lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 30px;
+    opacity: 0.1;
+    pointer-events: none;
+
+    span {
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 1px;
+        background-color: var(--white);
+    }
+
+    .line2 {
+        left: 33.33%;
+    }
+    .line3 {
+        left: 66.66%;
+    }
+    .line4 {
+        display: none;
+    }
+}
+
+@include orientation(landscape) {
+    .bg__lines {
+        left: 50px;
+    }
+}
+
+@include up(992) {
+    .bg__lines {
+        left: 100px;
+
+        .line2 {
+            left: 25%;
+        }
+        .line3 {
+            left: 50%;
+        }
+        .line4 {
+            display: block;
+            left: 75%;
+        }
+    }
+}

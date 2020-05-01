@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New-Zealand - Alexandre Fournou photographie</title>
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./css/style.scss">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__icon">
+            <span class="square square1"></span>
+            <span class="square square2"></span>
+            <span class="square square3"></span>
+            <span class="square square4"></span>
+        </div>
+        <span class="instagram">
+            <a title="Voir mon compte Instagram" href="https://www.instagram.com/frnalex/" target="_blank">
+                <img src="./img/svg/Instagram.svg" alt="logo instagram">
+            </a>
+        </span>
+        <div class="nav__container">
+            <ul class="nav__list">
+                <div class="nav__column">
+                    <li class="nav__item"><a href="pyrenees.html" data-name="pyrenees">Pyrénées</a></li>
+                    <li class="nav__item"><a href="new-zealand.html" data-name="newzealand">New-Zealand</a></li>
+                    <li class="nav__item"><a href="corse.html" data-name="corse">Corse</a></li>
+                    <li class="nav__item"><a href="asie.html" data-name="asie">Asie</a>
+                    </li>
+                </div>
+                <div class="nav__column">
+                    <li class="nav__item"><a href="australie.html" data-name="australie">Australie</a></li>
+                    <li class="nav__item"><a href="astrophotographie.html" data-name="astro">Astrophotographie</a>
+                    </li>
+                </div>
+                <div class="nav__column nav__imgBloc">
+                    <div class="nav__column nav__imgBloc--overlay"></div>
+                </div>
+            </ul>
+            <div class="bg__lines">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+                <span class="line4"></span>
+            </div>
+        </div>
+    </nav>
+
+    <a class="home__link" href="#" title="Retour à l'accueil" onclick="history.back()">
+        <img src="./img/svg/arrow-left.svg" alt="">
+    </a>
+
+    <article class="grid container">
+        <div class="grid__sizer"></div>
+
+        <!-- Photo 1-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                            ./img/newzealand/lake-harris_w_360.jpg 360w,
+                            ./img/newzealand/lake-harris_w_832.jpg 832w,
+                            ./img/newzealand/lake-harris_w_1160.jpg 1160w,
+                            ./img/newzealand/lake-harris_w_1435.jpg 1435w,
+                            ./img/newzealand/lake-harris_w_1920.jpg 1920w"
+                    src="./img/newzealand/lake-harris_w_1920.jpg" alt="Le lac Harris en Nouvelle-Zélande">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Harris lake</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/8.0 1/400s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 2-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                        ./img/newzealand/coromandel-peak-sunrise_w_360.jpg 360w,
+                        ./img/newzealand/coromandel-peak-sunrise_w_754.jpg 754w,
+                        ./img/newzealand/coromandel-peak-sunrise_w_1056.jpg 1056w,
+                        ./img/newzealand/coromandel-peak-sunrise_w_1258.jpg 1258w,
+                        ./img/newzealand/coromandel-peak-sunrise_w_1536.jpg 1536w"
+                    src="./img/newzealand/coromandel-peak-sunrise_w_1536.jpg" alt="Tapis de fleurs au pic de Viscos"
+                    loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Printemps au Viscos</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                30mm ƒ/8.0 1/50s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 3-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/wharariki-beach-sunset_w_360.jpg 360w,
+                ./img/newzealand/wharariki-beach-sunset_w_749.jpg 749w,
+                ./img/newzealand/wharariki-beach-sunset_w_1028.jpg 1028w,
+                ./img/newzealand/wharariki-beach-sunset_w_1280.jpg 1280w"
+                    src="./img/newzealand/wharariki-beach-sunset_w_1280.jpg"
+                    alt="La plage de Wharariki au coucher du soleil" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Wharariki beach</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                16mm ƒ/9.0 1/5s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 4-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/roys-peak-sunset_w_360.jpg 360w,
+                ./img/newzealand/roys-peak-sunset_w_934.jpg 934w,
+                ./img/newzealand/roys-peak-sunset_w_1325.jpg 1325w,
+                ./img/newzealand/roys-peak-sunset_w_1600.jpg 1600w" src="./img/newzealand/roys-peak-sunset_w_1600.jpg"
+                    alt="Roys peak best viewpoint" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Roys peak</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                15mm ƒ/8.0 1/25s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 5-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/lake-matheson-reflection_w_360.jpg 360w,
+                ./img/newzealand/lake-matheson-reflection_w_809.jpg 809w,
+                ./img/newzealand/lake-matheson-reflection_w_1100.jpg 1100w,
+                ./img/newzealand/lake-matheson-reflection_w_1280.jpg 1280w"
+                    src="./img/newzealand/lake-matheson-reflection_w_1280.jpg" alt="Parfait reflet au lac Matheson"
+                    loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Lake Matheson</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                35mm ƒ/8.0 1/160s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 6-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/moke-lake-horse_w_360.jpg 360w,
+                ./img/newzealand/moke-lake-horse_w_758.jpg 758w,
+                ./img/newzealand/moke-lake-horse_w_1058.jpg 1058w,
+                ./img/newzealand/moke-lake-horse_w_1280.jpg 1280w" src="./img/newzealand/moke-lake-horse_w_1280.jpg"
+                    alt="Un cheval en liberté près de Moke lake" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Cheval à Moke lake</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                50mm ƒ/8.0 1/80s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 7-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/wharariki-beach-cave_w_360.jpg 360w,
+                ./img/newzealand/wharariki-beach-cave_w_910.jpg 910w,
+                ./img/newzealand/wharariki-beach-cave_w_1312.jpg 1312w,
+                ./img/newzealand/wharariki-beach-cave_w_1600.jpg 1600w"
+                    src="./img/newzealand/wharariki-beach-cave_w_1600.jpg"
+                    alt="Une petite grotte sur la plage de Wharariki" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Wharariki cave</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                16mm ƒ/8.0 1/50s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 8-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/wanaka-tree_w_360.jpg 360w,
+                ./img/newzealand/wanaka-tree_w_911.jpg 911w,
+                ./img/newzealand/wanaka-tree_w_1308.jpg 1308w,
+                ./img/newzealand/wanaka-tree_w_1600.jpg 1600w" src="./img/newzealand/wanaka-tree_w_1600.jpg"
+                    alt="Un arbre au milieu d'un lac" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">That Wanaka Tree</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                28mm ƒ/8.0 1/160s ISO-400
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 9-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/queenstown-sunset_w_360.jpg 360w,
+                ./img/newzealand/queenstown-sunset_w_758.jpg 758w,
+                ./img/newzealand/queenstown-sunset_w_1060.jpg 1060w,
+                ./img/newzealand/queenstown-sunset_w_1280.jpg 1280w"
+                    src="./img/newzealand/queenstown-sunset_w_1280.jpg" alt="Coucher de soleil au dessus de Queenstown"
+                    loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Queenstown</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/8.0 1/30s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 10-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/mountain-cloud-inversion_w_360.jpg 360w,
+                ./img/newzealand/mountain-cloud-inversion_w_851.jpg 851w,
+                ./img/newzealand/mountain-cloud-inversion_w_1123.jpg 1123w,
+                ./img/newzealand/mountain-cloud-inversion_w_1280.jpg 1280w"
+                    src="./img/newzealand/mountain-cloud-inversion_w_1280.jpg"
+                    alt="Le sommet d'une montagne qui dépasse de la mer de nuage" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Mount Temple</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                50mm ƒ/8.0 1/250s ISO-200
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 11-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/milford-sound-sunrise_w_360.jpg 360w,
+                ./img/newzealand/milford-sound-sunrise_w_924.jpg 924w,
+                ./img/newzealand/milford-sound-sunrise_w_1314.jpg 1314w,
+                ./img/newzealand/milford-sound-sunrise_w_1600.jpg 1600w"
+                    src="./img/newzealand/milford-sound-sunrise_w_1600.jpg" alt="Lever de soleil à Milford sound"
+                    loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Milford Sound</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/8.0 1/60s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 12-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/nugget-point-lighthouse_w_360.jpg 360w,
+                ./img/newzealand/nugget-point-lighthouse_w_935.jpg 935w,
+                ./img/newzealand/nugget-point-lighthouse_w_1323.jpg 1323w,
+                ./img/newzealand/nugget-point-lighthouse_w_1600.jpg 1600w"
+                    src="./img/newzealand/nugget-point-lighthouse_w_1600.jpg" alt="Le phare de nugget point"
+                    loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Nugget Point Lighthouse</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                12mm ƒ/8.0 1/60s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 13-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/queenstown-boat_w_360.jpg 360w,
+                ./img/newzealand/queenstown-boat_w_770.jpg 770w,
+                ./img/newzealand/queenstown-boat_w_1064.jpg 1064w,
+                ./img/newzealand/queenstown-boat_w_1280.jpg 1280w" src="./img/newzealand/queenstown-boat_w_1280.jpg"
+                    alt="Un bateau au milieu de Wakatipu lake" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Wakatipu lake</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                50mm ƒ/8.0 1/80s ISO-200
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 14-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/edoras-rainbow_w_360.jpg 360w,
+                ./img/newzealand/edoras-rainbow_w_768.jpg 768w,
+                ./img/newzealand/edoras-rainbow_w_1062.jpg 1062w,
+                ./img/newzealand/edoras-rainbow_w_1280.jpg 1280w" src="./img/newzealand/edoras-rainbow_w_1280.jpg"
+                    alt="Un arc-en-ciel au-dessus du mount Sunday" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Edoras rainbow</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                50mm ƒ/8.0 1/500s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 16-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/avalanche-peak_w_360.jpg 360w,
+                ./img/newzealand/avalanche-peak_w_764.jpg 764w,
+                ./img/newzealand/avalanche-peak_w_1051.jpg 1051w,
+                ./img/newzealand/avalanche-peak_w_1280.jpg 1280w" src="./img/newzealand/avalanche-peak_w_1280.jpg"
+                    alt="Coucher du soleil vu depuis Avalanche peak" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Avalanche peak</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                28mm ƒ/8.0 1/100s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 17-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/mont-cook-man_w_360.jpg 360w,
+                ./img/newzealand/mont-cook-man_w_765.jpg 765w,
+                ./img/newzealand/mont-cook-man_w_1055.jpg 1055w,
+                ./img/newzealand/mont-cook-man_w_1280.jpg 1280w" src="./img/newzealand/mont-cook-man_w_1280.jpg"
+                    alt="Un homme devant Mont Cook" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Mont Cook</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                31mm ƒ/8.0 1/1000s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 18-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/eglinton-valley_w_360.jpg 360w,
+                ./img/newzealand/eglinton-valley_w_770.jpg 770w,
+                ./img/newzealand/eglinton-valley_w_1063.jpg 1063w,
+                ./img/newzealand/eglinton-valley_w_1280.jpg 1280w" src="./img/newzealand/eglinton-valley_w_1280.jpg"
+                    alt="Coucher de soleil depuis Eglinton valley" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Eglinton valley</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                39mm ƒ/8.0 1/6s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 19-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/moke-lake-sunrise_w_360.jpg 360w,
+                ./img/newzealand/moke-lake-sunrise_w_910.jpg 910w,
+                ./img/newzealand/moke-lake-sunrise_w_1281.jpg 1281w,
+                ./img/newzealand/moke-lake-sunrise_w_1600.jpg 1600w"
+                    src="./img/newzealand/moke-lake-sunrise_w_1600.jpg" alt="Moke lake au petit matin" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Moke lake</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                16mm ƒ/8.0 1/60s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 20-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" ssrcset="
+                ./img/newzealand/mount-alfred_w_360.jpg 360w,
+                ./img/newzealand/mount-alfred_w_901.jpg 901w,
+                ./img/newzealand/mount-alfred_w_1301.jpg 1301w,
+                ./img/newzealand/mount-alfred_w_1600.jpg 1600w" src="./img/newzealand/mount-alfred_w_1600.jpg"
+                    alt="Début d'orage sur le mont Alfred" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Mount Alfred</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                50mm ƒ/5.6 1/80s ISO-200
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 21-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/newzealand/hooker-lake_w_360.jpg 360w,
+                ./img/newzealand/hooker-lake_w_769.jpg 769w,
+                ./img/newzealand/hooker-lake_w_1059.jpg 1059w,
+                ./img/newzealand/hooker-lake_w_1280.jpg 1280w" src="./img/newzealand/hooker-lake_w_1280.jpg"
+                    alt="Fin de journée sur le lac Hooker" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Hooker lake</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/8.0 1/15s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 15-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                                ./img/newzealand/mont-cook-clouds_w_360.jpg 360w,
+                                ./img/newzealand/mont-cook-clouds_w_756.jpg 756w,
+                                ./img/newzealand/mont-cook-clouds_w_1036.jpg 1036w,
+                                ./img/newzealand/mont-cook-clouds_w_1280.jpg 1280w"
+                    src="./img/newzealand/mont-cook-clouds_w_1280.jpg"
+                    alt="Panorama de mer de nuage à Mont Cook National Park" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Mont Cook National Park</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                25mm ƒ/8.0 1/1000s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Je suis un photographe amateur passioné de photo de paysage. Découvrez mes clichés des Pyrénées, de la Corse, et partout autour du monde">
+    <title>Alexandre Fournou Photographie</title>
+    <script src="./js/app.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (sessionStorage.getItem("loader") === null) {
+                const loader = document.querySelector(".loader");
+
+                loader.style.display = "flex";
+                setTimeout(function () {
+                    loader.style.opacity = 0;
+                    setTimeout(function () {
+                        loader.style.display = "none";
+                    }, 500);
+                    sessionStorage.setItem("loader", "done");
+                }, 2000);
+            }
+        });
+    </script>
+</head>
+
+<body class="home">
+    <div class="loader">
+        <img src="img/svg/swipe.svg" alt="swipe to explore">
+    </div>
+
+    <nav class="nav">
+        <div class="nav__icon">
+            <span class="square square1"></span>
+            <span class="square square2"></span>
+            <span class="square square3"></span>
+            <span class="square square4"></span>
+        </div>
+        <span class="instagram">
+            <a title="Voir mon compte Instagram" href="https://www.instagram.com/frnalex/" target="_blank">
+                <img src="img/svg/Instagram.svg" alt="logo instagram">
+            </a>
+        </span>
+        <div class="nav__container">
+            <ul class="nav__list">
+                <div class="nav__column">
+                    <li class="nav__item"><a href="./pyrenees.html" data-name="pyrenees">Pyrénées</a></li>
+                    <li class="nav__item"><a href="./new-zealand.html" data-name="newzealand">New-Zealand</a></li>
+                    <li class="nav__item"><a href="./corse.html" data-name="corse">Corse</a></li>
+                    <li class="nav__item"><a href="./asie.html" data-name="asie">Asie</a>
+                    </li>
+                </div>
+                <div class="nav__column">
+                    <li class="nav__item"><a href="./australie.html" data-name="australie">Australie</a></li>
+                    <li class="nav__item"><a href="./astrophotographie.html" data-name="astro">Astrophotographie</a>
+                    </li>
+                </div>
+                <div class="nav__column nav__imgBloc">
+                    <div class="nav__column nav__imgBloc--overlay"></div>
+                </div>
+            </ul>
+            <div class="bg__lines">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+                <span class="line4"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="about">
+            <span>à Propos</span>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 - PYRENEES-->
+                <div class="swiper-slide" data-hash="pyrenees">
+                    <figure>
+                        <a href="./pyrenees.html" title="Voir la collection sur les Pyrénées">
+                            <picture>
+                                <source media="(orientation: landscape)" srcset="img/pyrenees/pic-du-midi-nuages_w_360.jpg 360w,
+                                img/pyrenees/pic-du-midi-nuages_w_706.jpg 706w,
+                                img/pyrenees/pic-du-midi-nuages_w_977.jpg 977w,
+                                img/pyrenees/pic-du-midi-nuages_w_1205.jpg 1205w,
+                                img/pyrenees/pic-du-midi-nuages_w_1920.jpg 1920w" sizes="100vw" />
+                                <source srcset="img/pyrenees/pic-viscos-printemps_w_360.jpg 360w,
+                                img/pyrenees/pic-viscos-printemps_w_615.jpg 615w,
+                                img/pyrenees/pic-viscos-printemps_w_813.jpg 813w,
+                                img/pyrenees/pic-viscos-printemps_w_988.jpg 988w,
+                                img/pyrenees/pic-viscos-printemps_w_1280.jpg 1280w" sizes="100vw" />
+                                <img class="img__hero" src="img/pyrenees/pic-du-midi-nuages_w_1205.jpg"
+                                    alt="Découvrez les magnifiques paysages des Pyrénées françaises"
+                                    data-swiper-parallax="75%" />
+                            </picture>
+                        </a>
+                        <div class="img__hero--overlay"></div>
+                        <figcaption data-swiper-parallax="75%">
+                            <h2 class="collection__title">
+                                Pyrénées</h2>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Slide 2 - NEW-ZEALAND-->
+                <div class="swiper-slide" data-hash="new-zealand">
+                    <figure>
+                        <a href="./new-zealand.html" title="Voir la collection sur la Nouvelle-Zélande">
+                            <picture>
+                                <source media="(orientation: landscape)" srcset="
+                                img/newzealand/lake-harris_w_360.jpg 360w,
+                                img/newzealand/lake-harris_w_832.jpg 832w,
+                                img/newzealand/lake-harris_w_1160.jpg 1160w,
+                                img/newzealand/lake-harris_w_1435.jpg 1435w,
+                                img/newzealand/lake-harris_w_1920.jpg 1920w" sizes="100vw" />
+                                <source srcset="
+                                img/newzealand/coromandel-peak-sunrise_w_360.jpg 360w,
+                                img/newzealand/coromandel-peak-sunrise_w_754.jpg 754w,
+                                img/newzealand/coromandel-peak-sunrise_w_1056.jpg 1056w,
+                                img/newzealand/coromandel-peak-sunrise_w_1258.jpg 1258w,
+                                img/newzealand/coromandel-peak-sunrise_w_1536.jpg 1536w" sizes="100vw" />
+                                <img class="img__hero" src="img/newzealand/lake-harris_w_1920.jpg"
+                                    alt="Séjour de 5 semaines en Nouvelle-Zélande" data-swiper-parallax="75%" />
+                            </picture>
+                        </a>
+                        <div class="img__hero--overlay"></div>
+                        <figcaption data-swiper-parallax="75%">
+                            <h2 class="collection__title">New-Zealand</h2>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Slide 3 - CORSE-->
+                <div class="swiper-slide" data-hash="corse">
+                    <figure>
+                        <a href="./corse.html" title="Voir la collection sur la Corse">
+                            <picture>
+                                <source media="(orientation: landscape)" srcset="
+                            img/corse/phare-ile-rousse_w_360.jpg 360w,
+                            img/corse/phare-ile-rousse_w_845.jpg 845w,
+                            img/corse/phare-ile-rousse_w_1175.jpg 1175w,
+                            img/corse/phare-ile-rousse_w_1453.jpg 1453w,
+                            img/corse/phare-ile-rousse_w_1920.jpg 1920w" sizes="100vw" />
+                                <source srcset="
+                            img/corse/monte-senino_w_360.jpg 360w,
+                            img/corse/monte-senino_w_650.jpg 650w,
+                            img/corse/monte-senino_w_864.jpg 864w,
+                            img/corse/monte-senino_w_1059.jpg 1059w,
+                            img/corse/monte-senino_w_1536.jpg 1536w" sizes="100vw" />
+                                <img class="img__hero" src="img/corse/phare-ile-rousse_w_1920.jpg"
+                                    alt="Une collection de photos de l'ile de beauté" data-swiper-parallax="75%" />
+                            </picture>
+                        </a>
+                        <div class="img__hero--overlay"></div>
+                        <figcaption data-swiper-parallax="75%">
+                            <h2 class="collection__title">Corse</h2>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Slide 4 - ASIE-->
+                <div class="swiper-slide" data-hash="asie">
+                    <figure>
+                        <a href="./asie.html" title="Voir la collection sur l'Asie du sud-est">
+                            <picture>
+                                <source media="(orientation: landscape)" srcset="
+                            img/asie/mont-bromo_w_360.jpg 360w,
+                            img/asie/mont-bromo_w_747.jpg 747w,
+                            img/asie/mont-bromo_w_1026.jpg 1026w,
+                            img/asie/mont-bromo_w_1263.jpg 1263w,
+                            img/asie/mont-bromo_w_1920.jpg 1920w" sizes="100vw" />
+                                <source srcset="
+                            img/asie/gili-trawangan-turtle_w_360.jpg 360w,
+                            img/asie/gili-trawangan-turtle_w_876.jpg 876w,
+                            img/asie/gili-trawangan-turtle_w_1223.jpg 1223w,
+                            img/asie/gili-trawangan-turtle_w_1518.jpg 1518w,
+                            img/asie/gili-trawangan-turtle_w_1920.jpg 1920w" sizes="100vw" />
+                                <img class="img__hero" src="img/asie/mont-bromo_w_1920.jpg"
+                                    alt="Photos de mes 6 mois en Asie du sud-est" data-swiper-parallax="75%" />
+                            </picture>
+                        </a>
+                        <div class="img__hero--overlay"></div>
+                        <figcaption data-swiper-parallax="75%">
+                            <h2 class="collection__title">Asie</h2>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Slide 5 - AUSTRALIE-->
+                <div class="swiper-slide" data-hash="australie">
+                    <figure>
+                        <a href="./australie.html" title="Voir la collection sur l'Australie">
+                            <picture>
+                                <source media="(orientation: landscape)" srcset="
+                        img/australie/lincolns-rock_w_360.jpg 360w,
+                        img/australie/lincolns-rock_w_784.jpg 784w,
+                        img/australie/lincolns-rock_w_1089.jpg 1089w,
+                        img/australie/lincolns-rock_w_1345.jpg 1345w,
+                        img/australie/lincolns-rock_w_1920.jpg 1920w" sizes="100vw" />
+                                <source srcset="
+                        img/australie/harbour-bridge-sidney_w_360.jpg 360w,
+                        img/australie/harbour-bridge-sidney_w_620.jpg 620w,
+                        img/australie/harbour-bridge-sidney_w_824.jpg 824w,
+                        img/australie/harbour-bridge-sidney_w_1000.jpg 1000w,
+                        img/australie/harbour-bridge-sidney_w_1536.jpg 1536w" sizes="100vw" />
+                                <img class="img__hero" src="img/australie/lincolns-rock_w_1920.jpg"
+                                    alt="L'australie, sa faune, ses plages et ses petites montagnes"
+                                    data-swiper-parallax="75%" />
+                            </picture>
+                        </a>
+                        <div class="img__hero--overlay"></div>
+                        <figcaption data-swiper-parallax="75%">
+                            <h2 class="collection__title">Australie</h2>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Slide 6 - ASTRO-->
+                <div class="swiper-slide" data-hash="astro">
+                    <figure>
+                        <a href="./astrophotographie.html" title="Voir la collection sur l'Astrophotographie">
+                            <picture>
+                                <source media="(orientation: landscape)" srcset="
+                            img/astrophotographie/bay-of-fire-wilkyway_w_360.jpg 360w,
+                            img/astrophotographie/bay-of-fire-wilkyway_w_934.jpg 934w,
+                            img/astrophotographie/bay-of-fire-wilkyway_w_1325.jpg 1325w,
+                            img/astrophotographie/bay-of-fire-wilkyway_w_1618.jpg 1618w,
+                            img/astrophotographie/bay-of-fire-wilkyway_w_1920.jpg 1920w" sizes="100vw" />
+                                <source srcset="
+                            img/astrophotographie/lac-d-ilheou-milkyway_w_360.jpg 360w,
+                            img/astrophotographie/lac-d-ilheou-milkyway_w_709.jpg 709w,
+                            img/astrophotographie/lac-d-ilheou-milkyway_w_957.jpg 957w,
+                            img/astrophotographie/lac-d-ilheou-milkyway_w_1164.jpg 1164w,
+                            img/astrophotographie/lac-d-ilheou-milkyway_w_1536.jpg 1536w"
+                                    src="img/astrophotographie/lac-d-ilheou-milkyway_w_1536.jpg" sizes="100vw" />
+                                <img class="img__hero" src="img/astrophotographie/bay-of-fire-wilkyway_w_1920.jpg"
+                                    alt="Photos des étoiles et de la voie lactée" data-swiper-parallax="75%" />
+                            </picture>
+                        </a>
+                        <div class="img__hero--overlay"></div>
+                        <figcaption data-swiper-parallax="75%">
+                            <h2 class="collection__title">Astrophoto</h2>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination pagination"></div>
+
+            <span class="home__indication">Tap pour voir la collection</span>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"><img src="img/svg/arrow-swiper.svg" alt="prev slide"></div>
+                <div class="swiper-button-next"><img src="img/svg/arrow-swiper.svg" alt="prev slide"></div> -->
+        </div>
+    </div>
+
+    <div class="about__container">
+        <div class="about__close">
+            <span class="square square1"></span>
+            <span class="square square3"></span>
+        </div>
+        <div class="about__content">
+            <p class="about__copyright">&copy; Alexandre Fournou</p>
+            <article class="about__description">
+                <p>La photo m'a fait me lever tôt pour contempler des levers de soleil sur des volcans au bout du
+                    monde
+                    ou
+                    couché tard pour capter la voie lactée sur des sommets des Pyrénées.</p>
+                <p>Ça fait des années qu'elle me force à découvrir des coins plus beaux les uns que les autres, et
+                    c'est
+                    surêment ça qui me passionne dans la photo de paysage.</p>
+                <p>Vous aussi prenez le temps de regarder ce qui vous entoure, vous verrez ça vaut le coup !</p>
+            </article>
+            <address class="about__email">
+                Email:
+                <a href="mailto:alexandre.fournou@gmail.com">alexandre.fournou@gmail.com</a>
+            </address>
+            <a class="about__link" href="./mentions-legales.html">Mentions légales</a>
+        </div>
+        <div class="about__img">
+            <img srcset="
+                        img/astrophotographie/bay-of-fire-wilkyway_w_1618.jpg 1618w,
+                        img/astrophotographie/bay-of-fire-wilkyway_w_1920.jpg 1920w" sizes="(min-width: 960px) 25vw"
+                src="img/astrophotographie/bay-of-fire-wilkyway_w_1920.jpg"
+                alt="Le photographe derrière les photos du site">
+            <div class="about__imgOverlay"></div>
+        </div>
+
+        <div class="bg__lines">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+            <span class="line4"></span>
+        </div>
+    </div>
+</body>
+
+</html>

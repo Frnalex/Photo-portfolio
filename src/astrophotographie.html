@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrophotographie - Alexandre Fournou photographie</title>
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./css/style.scss">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__icon">
+            <span class="square square1"></span>
+            <span class="square square2"></span>
+            <span class="square square3"></span>
+            <span class="square square4"></span>
+        </div>
+        <span class="instagram">
+            <a title="Voir mon compte Instagram" href="https://www.instagram.com/frnalex/" target="_blank">
+                <img src="./img/svg/Instagram.svg" alt="logo instagram">
+            </a>
+        </span>
+        <div class="nav__container">
+            <ul class="nav__list">
+                <div class="nav__column">
+                    <li class="nav__item"><a href="pyrenees.html" data-name="pyrenees">Pyrénées</a></li>
+                    <li class="nav__item"><a href="new-zealand.html" data-name="newzealand">New-Zealand</a></li>
+                    <li class="nav__item"><a href="corse.html" data-name="corse">Corse</a></li>
+                    <li class="nav__item"><a href="asie.html" data-name="asie">Asie</a>
+                    </li>
+                </div>
+                <div class="nav__column">
+                    <li class="nav__item"><a href="australie.html" data-name="australie">Australie</a></li>
+                    <li class="nav__item"><a href="astrophotographie.html" data-name="astro">Astrophotographie</a>
+                    </li>
+                </div>
+                <div class="nav__column nav__imgBloc">
+                    <div class="nav__column nav__imgBloc--overlay"></div>
+                </div>
+            </ul>
+            <div class="bg__lines">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+                <span class="line4"></span>
+            </div>
+        </div>
+    </nav>
+
+    <a class="home__link" href="#" title="Retour à l'accueil" onclick="history.back()">
+        <img src="./img/svg/arrow-left.svg" alt="">
+    </a>
+
+    <article class="grid container">
+        <div class="grid__sizer"></div>
+
+        <!-- Photo 1-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                            ./img/astrophotographie/lac-d-ilheou-milkyway_w_360.jpg 360w,
+                            ./img/astrophotographie/lac-d-ilheou-milkyway_w_709.jpg 709w,
+                            ./img/astrophotographie/lac-d-ilheou-milkyway_w_957.jpg 957w,
+                            ./img/astrophotographie/lac-d-ilheou-milkyway_w_1164.jpg 1164w,
+                            ./img/astrophotographie/lac-d-ilheou-milkyway_w_1536.jpg 1536w"
+                    src="./img/astrophotographie/lac-d-ilheou-milkyway_w_1536.jpg"
+                    alt="Lac d'Ilhéou de nuit avec la voie lactée">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Lac d'Ilhéou</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/2.8 20s ISO-3200
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 2-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                    ./img/astrophotographie/bay-of-fire-wilkyway_w_360.jpg 360w,
+                    ./img/astrophotographie/bay-of-fire-wilkyway_w_934.jpg 934w,
+                    ./img/astrophotographie/bay-of-fire-wilkyway_w_1325.jpg 1325w,
+                    ./img/astrophotographie/bay-of-fire-wilkyway_w_1618.jpg 1618w,
+                    ./img/astrophotographie/bay-of-fire-wilkyway_w_1920.jpg 1920w"
+                    src="./img/astrophotographie/bay-of-fire-wilkyway_w_1920.jpg" alt="Voie lactée en tasmanie"
+                    loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Bay of Fire</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/2.8 30s ISO-1600
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 3-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/astrophotographie/golfe-porto-nuit_w_360.jpg 360w,
+                ./img/astrophotographie/golfe-porto-nuit_w_777.jpg 777w,
+                ./img/astrophotographie/golfe-porto-nuit_w_1060.jpg 1060w,
+                ./img/astrophotographie/golfe-porto-nuit_w_1280.jpg 1280w"
+                    src="./img/astrophotographie/golfe-porto-nuit_w_1280.jpg"
+                    alt="La voie lactée au-dessus du golfe de Porto" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Monte senino</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Sigma 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                17mm ƒ/2.8 20s ISO-3200
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 4-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/astrophotographie/mount-bromo-night_w_360.jpg 360w,
+                ./img/astrophotographie/mount-bromo-night_w_835.jpg 835w,
+                ./img/astrophotographie/mount-bromo-night_w_1128.jpg 1128w,
+                ./img/astrophotographie/mount-bromo-night_w_1280.jpg 1280w"
+                    src="./img/astrophotographie/mount-bromo-night_w_1280.jpg" alt="Le volcan bromo sous les étoiles"
+                    loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Mount Bromo</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Sigma 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                17mm ƒ/4.0 30s ISO-1600
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 5-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/astrophotographie/church-good-shepherd_w_360.jpg 360w,
+                ./img/astrophotographie/church-good-shepherd_w_789.jpg 789w,
+                ./img/astrophotographie/church-good-shepherd_w_1107.jpg 1107w,
+                ./img/astrophotographie/church-good-shepherd_w_1280.jpg 1280w"
+                    src="./img/astrophotographie/church-good-shepherd_w_1280.jpg"
+                    alt="Petite chapelle sous la voie lactée" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Church of the good shepherd</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/2.8 30s ISO-3200
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 6-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/astrophotographie/roys-peak-stars_w_360.jpg 360w,
+                ./img/astrophotographie/roys-peak-stars_w_745.jpg 745w,
+                ./img/astrophotographie/roys-peak-stars_w_1018.jpg 1018w,
+                ./img/astrophotographie/roys-peak-stars_w_1280.jpg 1280w"
+                    src="./img/astrophotographie/roys-peak-stars_w_1280.jpg" alt="Roys peak en Nouvelle-Zélande de nuit"
+                    loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Roys Peak</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                17mm ƒ/2.8 30s ISO-1600
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 7-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/astrophotographie/wharariki-beach-stars_w_360.jpg 360w,
+                ./img/astrophotographie/wharariki-beach-stars_w_783.jpg 783w,
+                ./img/astrophotographie/wharariki-beach-stars_w_1096.jpg 1096w,
+                ./img/astrophotographie/wharariki-beach-stars_w_1280.jpg 1280w"
+                    src="./img/astrophotographie/wharariki-beach-stars_w_1280.jpg" alt="La plage de Wharariki de nuit"
+                    loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Wharariki beach</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/2.8 20s ISO-3200
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 8-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/astrophotographie/cauterets-etoiles_w_360.jpg 360w,
+                ./img/astrophotographie/cauterets-etoiles_w_790.jpg 790w,
+                ./img/astrophotographie/cauterets-etoiles_w_1112.jpg 1112w,
+                ./img/astrophotographie/cauterets-etoiles_w_1280.jpg 1280w"
+                    src="./img/astrophotographie/cauterets-etoiles_w_1280.jpg"
+                    alt="Le village de Cauterets sous les étoiles" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Cauterets</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/2.8 15s ISO-1600
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 9-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/astrophotographie/mount-batur-night_w_360.jpg 360w,
+                ./img/astrophotographie/mount-batur-night_w_772.jpg 772w,
+                ./img/astrophotographie/mount-batur-night_w_1089.jpg 1089w,
+                ./img/astrophotographie/mount-batur-night_w_1280.jpg 1280w"
+                    src="./img/astrophotographie/mount-batur-night_w_1280.jpg"
+                    alt="Le volcan mount Batur dans la brume de nuit" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Mount Batur</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/2.8 30s ISO-1600
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </article>
+</body>
+
+</html>

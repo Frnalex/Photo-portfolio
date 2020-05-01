@@ -1,0 +1,48 @@
+// Variables
+// ==================
+:root {
+    --black: #161616;
+    --white: #ffffff;
+}
+
+// Outils
+// ==================
+@import "tools/reset";
+@import "tools/mixins";
+@import "tools/typography";
+
+// Generic
+// ==================
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: $font;
+    font-size: 16px;
+    color: var(--white);
+    line-height: 1.3;
+    background-color: var(--black);
+    position: relative;
+    overflow-x: hidden;
+}
+
+body.home {
+    overflow: hidden;
+}
+
+// Modules
+// ==================
+@import "modules/loader";
+@import "modules/bg-lines";
+@import "modules/nav";
+
+// Pages
+// ==================
+@import "pages/home";
+@import "pages/about";
+@import "pages/collection";
+@import "pages/mentions-legales";

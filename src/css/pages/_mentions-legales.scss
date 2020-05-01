@@ -1,0 +1,65 @@
+.mentions__container {
+    padding: 50px 30px;
+    padding-top: 70px;
+
+    h2 {
+        font-size: 2rem;
+        margin: 30px auto;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 20px auto;
+    }
+
+    * + * {
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: $font-alt;
+        font-size: 0.825rem;
+        line-height: 1.5;
+
+        strong {
+            font-weight: bold;
+            display: block;
+        }
+
+        * + * {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include up(992) {
+    .mentions__container {
+        padding: 50px 100px;
+        padding-top: 100px;
+        max-width: 75%;
+
+        h2 {
+            font-size: 3rem;
+            margin: 50px auto;
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin: 30px auto;
+        }
+
+        * + * {
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+
+            * + * {
+                margin-top: 20px;
+            }
+        }
+    }
+}

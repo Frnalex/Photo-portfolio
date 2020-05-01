@@ -1,0 +1,263 @@
+// NAVBAR
+// ==================
+.nav {
+    z-index: 40;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+@include orientation(landscape) {
+    .nav {
+        top: 40px;
+        right: 50px;
+    }
+}
+
+.nav__icon {
+    margin-left: 10px;
+}
+
+.nav__icon,
+.instagram {
+    z-index: 50;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    position: relative;
+
+    .square {
+        display: block;
+        width: 25%;
+        height: 25%;
+        background-color: var(--white);
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .square1 {
+        top: 5px;
+        left: 5px;
+    }
+    .square2 {
+        top: 5px;
+        right: 5px;
+    }
+    .square3 {
+        bottom: 5px;
+        right: 5px;
+    }
+    .square4 {
+        bottom: 5px;
+        left: 5px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.nav__icon.active {
+    .square {
+        top: 50%;
+        left: 50%;
+        width: 1px;
+        height: 1px;
+    }
+
+    .square1 {
+        height: 41px;
+        top: 0px;
+        transform: rotate(-45deg);
+    }
+    .square3 {
+        height: 41px;
+        top: 0px;
+        transform: rotate(45deg);
+    }
+
+    .square2,
+    .square4 {
+        opacity: 0;
+    }
+}
+
+@include up(992) {
+    .nav {
+        top: 70px;
+        right: 70px;
+    }
+    .nav__icon {
+        margin-left: 20px;
+    }
+
+    .nav__icon,
+    .instagram {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav__icon.active {
+        .square1 {
+            height: 50px;
+        }
+        .square3 {
+            height: 50px;
+        }
+    }
+}
+
+.nav__container {
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    top: -30px;
+    right: -30px;
+    background-color: var(--black);
+    padding: 30px;
+    padding-top: 112px;
+    transform: translateY(-100vh);
+}
+
+.nav__list {
+    position: relative;
+    z-index: 10;
+    font-size: 2.25rem;
+    font-size: calc(0.75rem + 3.5vh);
+    line-height: 1.4;
+}
+
+.nav__item {
+    overflow: hidden;
+
+    a {
+        display: inline-block;
+        transform: translateY(100%);
+    }
+}
+
+@include orientation(landscape) {
+    .nav__container {
+        top: -40px;
+        right: -50px;
+        padding: 50px;
+        padding-top: 80px;
+    }
+}
+
+@include up(992) {
+    .nav__container {
+        top: -70px;
+        right: -70px;
+        padding: 100px;
+        padding-top: 110px;
+    }
+
+    .nav__list {
+        display: flex;
+
+        .nav__column {
+            width: 25vw;
+            overflow: hidden;
+        }
+
+        .nav__imgBloc {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            top: -110px;
+            left: 1px;
+            height: 100vh;
+            width: calc(25vw - 1px);
+            background-image: url("../img/pyrenees/pic-viscos-printemps_w_615.jpg");
+            background-image: url("../img/newzealand/coromandel-peak-sunrise_w_754.jpg");
+            background-image: url("../img/corse/monte-senino_w_650.jpg");
+            background-image: url("../img/asie/gili-trawangan-turtle_w_876.jpg");
+            background-image: url("../img/australie/harbour-bridge-sidney_w_620.jpg");
+            background-image: url("../img/astrophotographie/lac-d-ilheou-milkyway_w_709.jpg");
+            background-image: none;
+        }
+
+        .bg-pyrenees {
+            background-image: url("../img/pyrenees/pic-viscos-printemps_w_615.jpg");
+        }
+        .bg-newzealand {
+            background-image: url("../img/newzealand/coromandel-peak-sunrise_w_754.jpg");
+        }
+        .bg-corse {
+            background-image: url("../img/corse/monte-senino_w_650.jpg");
+        }
+        .bg-asie {
+            background-image: url("../img/asie/gili-trawangan-turtle_w_876.jpg");
+        }
+        .bg-australie {
+            background-image: url("../img/australie/harbour-bridge-sidney_w_620.jpg");
+        }
+        .bg-astro {
+            background-image: url("../img/astrophotographie/lac-d-ilheou-milkyway_w_709.jpg");
+        }
+
+        .nav__imgBloc--overlay {
+            background-color: var(--black);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: top 0.5s ease-in-out;
+        }
+    }
+}
+
+// ABOUT
+// ==================
+.about {
+    cursor: pointer;
+    z-index: 50;
+    position: fixed;
+    font-family: $font-alt;
+    text-transform: capitalize;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    bottom: 20px;
+    right: -82px;
+
+    span {
+        padding: 10px 20px;
+    }
+}
+
+.about::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: -80px;
+    width: 80px;
+    height: 1px;
+    background-color: var(--white);
+}
+
+@include orientation(landscape) {
+    .about {
+        bottom: 30px;
+        right: -62px;
+    }
+}
+
+@include up(992) {
+    .about {
+        bottom: 50px;
+        right: -34px;
+        transition: bottom 0.3s ease-in-out;
+
+        &:hover {
+            bottom: 70px;
+        }
+    }
+}

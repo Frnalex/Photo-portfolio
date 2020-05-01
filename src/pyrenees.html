@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyrénées - Alexandre Fournou photographie</title>
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./css/style.scss">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__icon">
+            <span class="square square1"></span>
+            <span class="square square2"></span>
+            <span class="square square3"></span>
+            <span class="square square4"></span>
+        </div>
+        <span class="instagram">
+            <a title="Voir mon compte Instagram" href="https://www.instagram.com/frnalex/" target="_blank">
+                <img src="./img/svg/Instagram.svg" alt="logo instagram">
+            </a>
+        </span>
+        <div class="nav__container">
+            <ul class="nav__list">
+                <div class="nav__column">
+                    <li class="nav__item"><a href="pyrenees.html" data-name="pyrenees">Pyrénées</a></li>
+                    <li class="nav__item"><a href="new-zealand.html" data-name="newzealand">New-Zealand</a></li>
+                    <li class="nav__item"><a href="corse.html" data-name="corse">Corse</a></li>
+                    <li class="nav__item"><a href="asie.html" data-name="asie">Asie</a>
+                    </li>
+                </div>
+                <div class="nav__column">
+                    <li class="nav__item"><a href="australie.html" data-name="australie">Australie</a></li>
+                    <li class="nav__item"><a href="astrophotographie.html" data-name="astro">Astrophotographie</a>
+                    </li>
+                </div>
+                <div class="nav__column nav__imgBloc">
+                    <div class="nav__column nav__imgBloc--overlay"></div>
+                </div>
+            </ul>
+            <div class="bg__lines">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+                <span class="line4"></span>
+            </div>
+        </div>
+    </nav>
+
+    <a class="home__link" href="#" title="Retour à l'accueil" onclick="history.back()">
+        <img src="./img/svg/arrow-left.svg" alt="">
+    </a>
+
+    <article class="grid container">
+        <div class="grid__sizer"></div>
+
+        <!-- Photo 1-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                        ./img/pyrenees/pic-viscos-printemps_w_360.jpg 360w,
+                        ./img/pyrenees/pic-viscos-printemps_w_615.jpg 615w,
+                        ./img/pyrenees/pic-viscos-printemps_w_813.jpg 813w,
+                        ./img/pyrenees/pic-viscos-printemps_w_988.jpg 988w,
+                        ./img/pyrenees/pic-viscos-printemps_w_1280.jpg 1280w"
+                    src="./img/pyrenees/pic-viscos-printemps_w_1280.jpg" alt="Tapis de fleurs au pic de Viscos"
+                    loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Printemps au Viscos</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/22.0 1/30s ISO-400
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 2-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                                        ./img/pyrenees/pic-du-midi-nuages_w_360.jpg 360w,
+                                        ./img/pyrenees/pic-du-midi-nuages_w_706.jpg 706w,
+                                        ./img/pyrenees/pic-du-midi-nuages_w_977.jpg 977w,
+                                        ./img/pyrenees/pic-du-midi-nuages_w_1205.jpg 1205w,
+                                        ./img/pyrenees/pic-du-midi-nuages_w_1920.jpg 1920w"
+                    src="./img/pyrenees/pic-du-midi-nuages_w_1920.jpg" alt="Mer de nuages depuis Luz Ardiden">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Mer de nuages au Pic</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Canon 18-55mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                55mm ƒ/8.0 1/160s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 3-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/gavarnie-automne_w_360.jpg 360w,
+                ./img/pyrenees/gavarnie-automne_w_927.jpg 927w,
+                ./img/pyrenees/gavarnie-automne_w_1312.jpg 1312w,
+                ./img/pyrenees/gavarnie-automne_w_1600.jpg 1600w" src="./img/pyrenees/gavarnie-automne_w_1600.jpg"
+                    alt="Gavarnie avec ses couleurs d'automne" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Automne à Gavarnie</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                14mm ƒ/8.0 1/60s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 4-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/luz-ardiden-nuages_w_360.jpg 360w,
+                ./img/pyrenees/luz-ardiden-nuages_w_906.jpg 906w,
+                ./img/pyrenees/luz-ardiden-nuages_w_1289.jpg 1289w,
+                ./img/pyrenees/luz-ardiden-nuages_w_1600.jpg 1600w" src="./img/pyrenees/luz-ardiden-nuages_w_1600.jpg"
+                    alt="Mer de nuage autour de Luz Ardiden" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Col de Riou</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/16.0 1/15s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 5-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/pic-neouvielle_w_360.jpg 360w,
+                ./img/pyrenees/pic-neouvielle_w_749.jpg 749w,
+                ./img/pyrenees/pic-neouvielle_w_1054.jpg 1054w,
+                ./img/pyrenees/pic-neouvielle_w_1280.jpg 1280w" src="./img/pyrenees/pic-neouvielle_w_1280.jpg"
+                    alt="Le Néouvielle qui dépasse des nuages" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Le Néouvielle</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                41mm ƒ/9.0 1/125s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 6-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/luz-ardiden-automne_w_360.jpg 360w,
+                ./img/pyrenees/luz-ardiden-automne_w_760.jpg 760w,
+                ./img/pyrenees/luz-ardiden-automne_w_1083.jpg 1083w,
+                ./img/pyrenees/luz-ardiden-automne_w_1280.jpg 1280w"
+                    src="./img/pyrenees/luz-ardiden-automne_w_1280.jpg" alt="Un peu de neige sur les montagnes"
+                    loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Début de l'hiver</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Sigma 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                17mm ƒ/8.0 1/200s ISO-200
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 7-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/pic-ardiden-nuages_w_360.jpg 360w,
+                ./img/pyrenees/pic-ardiden-nuages_w_921.jpg 921w,
+                ./img/pyrenees/pic-ardiden-nuages_w_1307.jpg 1307w,
+                ./img/pyrenees/pic-ardiden-nuages_w_1600.jpg 1600w" src="./img/pyrenees/pic-ardiden-nuages_w_1600.jpg"
+                    alt="Mer de nuage depuis le pic d'Ardiden" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Sieste au pic d'Ardiden</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/8.0 1/250s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 8-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/cirque-gavarnie-sunset_w_360.jpg 360w,
+                ./img/pyrenees/cirque-gavarnie-sunset_w_765.jpg 765w,
+                ./img/pyrenees/cirque-gavarnie-sunset_w_1056.jpg 1056w,
+                ./img/pyrenees/cirque-gavarnie-sunset_w_1280.jpg 1280w"
+                    src="./img/pyrenees/cirque-gavarnie-sunset_w_1280.jpg"
+                    alt="Coucher de soleil sur le village de Gavarnie" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Gavarnie</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                16mm ƒ/8.0 1/50s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 9-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/pic-viscos-sunset_w_360.jpg 360w,
+                ./img/pyrenees/pic-viscos-sunset_w_761.jpg 761w,
+                ./img/pyrenees/pic-viscos-sunset_w_1039.jpg 1039w,
+                ./img/pyrenees/pic-viscos-sunset_w_1280.jpg 1280w" src="./img/pyrenees/pic-viscos-sunset_w_1280.jpg"
+                    alt="Coucher de soleil sur le pic de Viscos" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Pic de Viscos</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/16.0 1/15s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 10-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/lac-ilheou_w_360.jpg 360w,
+                ./img/pyrenees/lac-ilheou_w_915.jpg 915w,
+                ./img/pyrenees/lac-ilheou_w_1346.jpg 1346w,
+                ./img/pyrenees/lac-ilheou_w_1600.jpg 1600w" src="./img/pyrenees/lac-ilheou_w_1600.jpg"
+                    alt="Lerver de soleil au lac d'Ilhéou" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">lac d'Ilhéou</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/8.0 1/20s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 11-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/luz-ardiden-moutons_w_360.jpg 360w,
+                ./img/pyrenees/luz-ardiden-moutons_w_900.jpg 900w,
+                ./img/pyrenees/luz-ardiden-moutons_w_1279.jpg 1279w,
+                ./img/pyrenees/luz-ardiden-moutons_w_1600.jpg 1600w"
+                    src="./img/pyrenees/luz-ardiden-moutons_w_1600.jpg" alt="Des moutons en pâture" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Luz Ardiden</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                16mm ƒ/10.0 1/160s ISO-400
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 12-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/panorama-cauterets_w_360.jpg 360w,
+                ./img/pyrenees/panorama-cauterets_w_912.jpg 912w,
+                ./img/pyrenees/panorama-cauterets_w_1298.jpg 1298w,
+                ./img/pyrenees/panorama-cauterets_w_1600.jpg 1600w" src="./img/pyrenees/panorama-cauterets_w_1600.jpg"
+                    alt="Mer de nuage au-dessus de Cauterets" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Panorama sur Cauterets</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/8.0 1/125s ISO-400
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 13-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/pic-ardiden-sunrise_w_360.jpg 360w,
+                ./img/pyrenees/pic-ardiden-sunrise_w_756.jpg 756w,
+                ./img/pyrenees/pic-ardiden-sunrise_w_1060.jpg 1060w,
+                ./img/pyrenees/pic-ardiden-sunrise_w_1280.jpg 1280w"
+                    src="./img/pyrenees/pic-ardiden-sunrise_w_1280.jpg" alt="Lever de soleil sur le pic d'Ardiden"
+                    loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Pic d'ardiden</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 70-300mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                96mm ƒ/4.0 1/60s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 14-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/pic-du-midi_w_360.jpg 360w,
+                ./img/pyrenees/pic-du-midi_w_803.jpg 803w,
+                ./img/pyrenees/pic-du-midi_w_1060.jpg 1060w,
+                ./img/pyrenees/pic-du-midi_w_1280.jpg 1280w" src="./img/pyrenees/pic-du-midi_w_1280.jpg"
+                    alt="Silhouette du Pic du Midi" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Silhouette du Pic du Midi</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tamron 70-300mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                300mm ƒ/8.0 1/200s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 15-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/lac-gaube-vignemale_w_360.jpg 360w,
+                ./img/pyrenees/lac-gaube-vignemale_w_761.jpg 761w,
+                ./img/pyrenees/lac-gaube-vignemale_w_1039.jpg 1039w,
+                ./img/pyrenees/lac-gaube-vignemale_w_1280.jpg 1280w"
+                    src="./img/pyrenees/lac-gaube-vignemale_w_1280.jpg" alt="Le lac de gaube avec le Vignemale en fond"
+                    loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Lac de Gaube et Vignemale</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Sigma 17-50mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                35mm ƒ/22.0 1/125s ISO-400
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 16-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/gavarnie-col-tentes_w_360.jpg 360w,
+                ./img/pyrenees/gavarnie-col-tentes_w_902.jpg 902w,
+                ./img/pyrenees/gavarnie-col-tentes_w_1277.jpg 1277w,
+                ./img/pyrenees/gavarnie-col-tentes_w_1600.jpg 1600w"
+                    src="./img/pyrenees/gavarnie-col-tentes_w_1600.jpg"
+                    alt="Cirque de Gavarnie vu depuis le pic de la Pahule" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Col des Tentes</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                16mm ƒ/10.0 1/250s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 17-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/lac-gaube-randonneur_w_360.jpg 360w,
+                ./img/pyrenees/lac-gaube-randonneur_w_921.jpg 921w,
+                ./img/pyrenees/lac-gaube-randonneur_w_1302.jpg 1302w,
+                ./img/pyrenees/lac-gaube-randonneur_w_1600.jpg 1600w"
+                    src="./img/pyrenees/lac-gaube-randonneur_w_1600.jpg"
+                    alt="Randonneur devant le reflet du Vignemale au lac de Gaube" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Reflet au lac de Gaube</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/8.0 1/80s ISO-400
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Photo 18-->
+        <div class="grid__item">
+            <figure>
+                <img sizes="(max-width: 992px) 100vw, 50vw" srcset="
+                ./img/pyrenees/cirque-gavarnie-randonneur_w_360.jpg 360w,
+                ./img/pyrenees/cirque-gavarnie-randonneur_w_924.jpg 924w,
+                ./img/pyrenees/cirque-gavarnie-randonneur_w_1308.jpg 1308w,
+                ./img/pyrenees/cirque-gavarnie-randonneur_w_1600.jpg 1600w"
+                    src="./img/pyrenees/cirque-gavarnie-randonneur_w_1600.jpg"
+                    alt="Un randonneur contemplant la grande cascade du Cirque de Gavarnie" loading="lazy">
+                <figcaption class="photo__figcaption">
+                    <h2 class="photo__title">Cascade de Gavarnie</h2>
+                    <img class="photo__btnInfos" src="./img/svg/infos.svg" alt="plus d'infos">
+                    <img class="photo__btnClose" src="./img/svg/btn-close.svg" alt="plus d'infos">
+                    <div class="photo__description">
+                        <p class="photo__text">
+                            <span class="photo__lens">
+                                <img src="img/svg/lens.svg" alt="objectif photo">
+                                Tokina 11-16mm
+                            </span>
+                            <span class="photo__exifs">
+                                <img src="img/svg/levels.svg" alt="exifs photo">
+                                11mm ƒ/9.0 1/100s ISO-100
+                            </span>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </article>
+</body>
+
+</html>
